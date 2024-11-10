@@ -3,7 +3,8 @@ const router = express.Router();
 const path = require("path");
 
 router.get(["/", "/home"], (req, res) => {
-    return res.render("home")
+    const data = require("../public/jsons/shoes.json");
+    return res.render("home", {data})
 })
 
 router.get("/about", (req, res) => {
@@ -15,7 +16,12 @@ router.get("/contact", (req, res) => {
 })
 
 router.get("/product/:id", (req, res) => {
-    return res.render(`product`)
+    const data = require("./jsons/shoes.json");
+    var produc = data.find(x=> x.id === Number(req.params.id))
+    if (produc){
+        return res.render(`product`, produc);
+    }
+    
 })
 
 
