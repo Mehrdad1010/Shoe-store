@@ -11,11 +11,11 @@ router.get("/about", (req, res) => {
 })
 
 router.get("/contact", (req, res) => {
-    return res.send("contact")
+    return res.render("contact")
 })
 
 router.get("/product/:id", (req, res) => {
-    return res.send(`product`)
+    return res.render(`product`)
 })
 
 
