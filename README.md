@@ -10,6 +10,8 @@
       <li>The page related to each product: /product 1, /proudct 2, ...</li>
     </ul>
   </li>
-  <li></li>
+  <li>
+    Design a header to be used on all pages and use include on all pages.
+  </li>
   <li></li>
 </ol>
