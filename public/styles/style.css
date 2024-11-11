@@ -21,3 +21,8 @@
 .wite_text {
     color: white;
 }
+
+.home_:hover {
+    color: #ffffff  !important;
+    background-color:  #0060dd  !important;
+}
