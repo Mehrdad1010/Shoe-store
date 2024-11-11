@@ -13,5 +13,11 @@
   <li>
     Design a header to be used on all pages and use include on all pages.
   </li>
-  <li></li>
+  <li>
+    Display a number of products on the page. So that each product is in the form of a card. By clicking on the buy button, the user enters the page related to that product.
+    (The use of modal is allowed for Ghaiz products. The design of the contact and about pages of each product is arbitrary, but the designed header must be visible on all Qal pages)
+  </li>
+  <li>
+    
+  </li>
 </ol>
