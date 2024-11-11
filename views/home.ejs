@@ -7,26 +7,49 @@
     <title>Home</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    
+
     <link rel="stylesheet" href="./styles/style.css">
     <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <%- include("./common/header", {color : ["gray-500-text", "wite_text", "wite_text"]}) %>
+    <%- include("./common/header", {color : ["gray-500-text", "wite_text" , "wite_text" ]}) %>
 
-<% for (let i = 0; i < data.length; i++) { %>
-    <div class="card" style="width: 18rem;">
-        <img class=<%= data[i]["آدرس"] %> src="کفش" alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
+        <div class="d-flex justify-content-between  flex-wrap pt-5 px-3">
+            <% for (let i=0; i < data.length; i++) { %>
+                <div class="d-flex justify-content-center col-lg-4 px-4, py-4">
+                <div class="card"  style="width: 90%;">
+                    <img class="card-img-top" src=<%=data[i]["آدرس"] %> alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title"><%= data[i]["مدل"] %></h5>
+                        <div>
+                            <div>
+                                <p class="card-text">:رنگ</p>
+                                <p class="card-text">:سایز</p>
+                                <p class="card-text">:جنس</p>
+                            </div>
+                            <div>
+                                <p class="card-text"><%= data[i]["رنگ"] %></p>
+                                <p class="card-text"><%= data[i]["سایز"] %></p>
+                                <p class="card-text"><%= data[i]["جنس"] %></p>
+                            </div>
+
+                        </div>
+                        
+                        <div>
+                            <p class="card-text">تومان <%= data[i]["قیمت"] %></p>
+                            <a href="#" class="btn btn-primary">خرید</a>
+                        </div>
+                        
+                    </div>
+                </div> %>
+            </div>
+
+                <% }; %>
         </div>
-      </div> %>
-    
-<% }; %>
-    
+
+
+
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
@@ -39,7 +62,7 @@
             crossorigin="anonymous"></script>
 
         <script src="https://kit.fontawesome.com/eb306e17bb.js" crossorigin="anonymous"></script>
-        
+
 </body>
 
 </html>
