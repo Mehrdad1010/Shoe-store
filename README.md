@@ -18,6 +18,7 @@
     (The use of modal is allowed for Ghaiz products. The design of the contact and about pages of each product is arbitrary, but the designed header must be visible on all Qal pages)
   </li>
   <li>
-    
+    Place a search bar on the main page that displays products filtered according to what the user enters in it. The search operation must be implemented globally and on all items and on the server side.
   </li>
+  Note: All the features mentioned in the server must be implemented with 4 routes and the use of more than 4 routes is not allowed.
 </ol>
