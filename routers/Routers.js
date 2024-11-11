@@ -16,10 +16,10 @@ router.get("/contact", (req, res) => {
 })
 
 router.get("/product/:id", (req, res) => {
-    const data = require("./jsons/shoes.json");
+    const data = require("../public/jsons/shoes.json");
     var produc = data.find(x=> x.id === Number(req.params.id))
     if (produc){
-        return res.render(`product`, produc);
+        return res.render(`product`, {produc});
     }
     
 })
