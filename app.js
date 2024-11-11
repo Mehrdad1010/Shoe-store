@@ -10,10 +10,10 @@ app.set("views", path.join(__dirname, "views"))
 
 app.use(express.json())
 app.use(express.static(path.join(__dirname, "public")))
-app.use("/home", (req, res, next)=>{
-    console.log(decodeURIComponent(req.url.split("=")[1]));
-    next()
-})
+// app.use("/home", (req, res, next)=>{
+//     console.log(decodeURIComponent(req.url.split("=")[1]));
+//     next()
+// })
 app.use("/", Routers)
 
 
