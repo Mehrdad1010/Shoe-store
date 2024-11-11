@@ -4,6 +4,7 @@
     font-weight: 100;
     src: url("../fonts/Vazirmatn-Regular.woff2");
 }
+
 @font-face {
     font-family: vazir;
     font-style: "normal";
@@ -11,18 +12,19 @@
     src: url("../fonts/Vazirmatn-Bold.woff2");
 }
 
-*{
+* {
     margin: 0;
     border: 0;
     box-sizing: border-box;
     font-family: vazir;
     font-weight: 100;
 }
+
 .wite_text {
     color: white;
 }
 
 .home_:hover {
-    color: #ffffff  !important;
-    background-color:  #0060dd  !important;
+    color: #ffffff !important;
+    background-color: #0060dd !important;
 }

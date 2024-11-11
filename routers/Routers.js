@@ -4,16 +4,9 @@ const path = require("path");
 const tools = require("../tools/check")
 
 router.get(["/", "/home"], (req, res) => {
-
-
     const data = require("../public/jsons/shoes.json");
     const search_text = decodeURIComponent(req.url.split("=")[1])
-
-
     const filter_param = tools.search_json(search_text, data);
-
-
-
     return res.render("home", { data: filter_param })
 })
 
@@ -31,10 +24,6 @@ router.get("/product/:id", (req, res) => {
     if (produc) {
         return res.render(`product`, { produc });
     }
-
 })
-
-
-
 
 module.exports = router;

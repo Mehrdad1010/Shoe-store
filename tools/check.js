@@ -1,8 +1,8 @@
 function search_json(input_text, json_file) {
 
-    if (input_text === "undefined") {        
+    if (input_text === "undefined") {
         return json_file
-    } else {    
+    } else {
         return json_file.filter((parametr) => {
             const text = Object.values(parametr)
                 .filter(value => typeof value === 'string')
